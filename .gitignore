@@ -1,2 +1,9 @@
 *.mp4
 .env
+*.pt
+*.jpg
+*.png
+*.pth
+*.txt
+*.yaml
+*.csv
