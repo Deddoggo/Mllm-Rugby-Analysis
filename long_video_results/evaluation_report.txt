@@ -1,0 +1,60 @@
+========================================
+LONG-VIDEO EVENT PROPOSAL EVALUATION
+========================================
+Video evaluated: Toulouse 24 - 27 ASM
+Ground Truth Time Offset applied: -1213s
+
+Ground truth events (in first 50 mins): 38
+Generated proposals: 62
+Matched events: 13
+
+Precision: 20.97%
+Recall: 34.21%
+F1: 26.00%
+
+========================================
+PER-CLASS RESULTS
+========================================
+Class        | GT   | Pred | TP  | FP  | FN  | Prec(%) | Rec(%)  | F1(%)  
+---------------------------------------------------------------------------
+Scrum        | 4    | 6    | 4   | 2   | 0   | 66.67   | 100.00  | 80.00  
+Lineout      | 24   | 43   | 9   | 34  | 15  | 20.93   | 37.50   | 26.87  
+Maul         | 4    | 5    | 0   | 5   | 4   | 0.00    | 0.00    | 0.00   
+Goal Kick    | 6    | 8    | 0   | 8   | 6   | 0.00    | 0.00    | 0.00   
+
+========================================
+TEMPORAL LOCALIZATION
+========================================
+Median midpoint error (Pred - GT): 3.511 s
+Mean absolute midpoint error:      3.040 s
+Mean temporal IoU (Matches):       0.167
+Matches with IoU >= 0.3:           2
+Matches with IoU >= 0.5:           0
+
+========================================
+DURATION ANALYSIS
+========================================
+Median absolute duration error: 9.77 s
+Mean absolute duration error:   11.30 s
+  Scrum      - GT Avg Dur:   2.1s | Pred Avg Dur:  13.5s
+  Lineout    - GT Avg Dur:   2.8s | Pred Avg Dur:   8.3s
+  Maul       - GT Avg Dur:   4.0s | Pred Avg Dur:   6.8s
+  Goal Kick  - GT Avg Dur:   3.5s | Pred Avg Dur:   7.4s
+
+========================================
+OFFSET-COMPENSATED DIAGNOSTIC (FINE-TUNING)
+========================================
+NOTE: Detects minor synchronization shifts (e.g., +/- a few seconds) beyond the 20-min fix.
+Minor Shift Detected:       +-6.473 seconds
+Matched events (Aligned):   34
+Compensated Precision:      0.548
+Compensated Recall:         0.895
+Compensated F1:             0.680
+
+========================================
+WINDOW-LEVEL DIAGNOSTIC EVALUATION
+========================================
+Accuracy: 96.74%
+Macro Precision: 19.35%
+Macro Recall:    20.00%
+Macro F1:        19.67%

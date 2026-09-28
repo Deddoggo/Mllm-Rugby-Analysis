@@ -1,0 +1,20 @@
+# Deep Learning & Vision Models
+torch
+torchvision
+torchaudio
+transformers
+accelerate
+ultralytics
+
+# Data Processing & Math
+numpy
+pandas
+scipy
+
+# Image/Video Processing & Visualization
+opencv-python
+matplotlib
+
+# Utilities
+tqdm
+ipywidgets
